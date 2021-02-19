@@ -30,7 +30,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="logo"><img src="images/logo.jpeg" class="rotate linear infinite" alt=""width=85 height=64/></li>
+							<li class="logo"><img src="images/logo.jpeg" class="rotate" alt=""width=85 height=64/></li>
 							<li class="active"><a href="index.html">HOME</a></li>
 							
 							<li><a href="events.html">EVENTS</a></li>
@@ -173,6 +173,18 @@
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
+	.rotate{
+		animation: rotation 3s infinite linear;
+	}
+	@keyframes rotation{
+		from{
+			trasform: rotate(0deg);
+		}
+		to{
+			transform: rotate(359deg);
+		}
+	}
+	
 </script>
 	</body>
 </html>
