@@ -177,14 +177,18 @@
 	
 </script>
 		<style>
-				.rotate{
-		
-	
-	
-		
-			trasform: rotate(359deg);
-	
-	}
+			 animation-name: rotate;
+  animation-duration: 10000ms;
+  animation-iteration-count: one;
+  animation-timing-function: linear; 
+			@keyframes rotate {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 			
 		</style>
 	</body>
