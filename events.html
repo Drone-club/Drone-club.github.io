@@ -192,5 +192,20 @@
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
+			<style>
+			.rotate {
+  animation: rotation 8s infinite ease;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+			
+		</style>
 	</body>
 </html>
