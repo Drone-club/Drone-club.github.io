@@ -47,10 +47,10 @@
 							</article>
 						<div id="myBtnContainer">
 							
-							<p style="vertical-align: center;"><button class="btn" onclick="filterSelection('all')">Show all</button></p>
-							<p style="vertical-align: center;"><button class="btn" onclick="filterSelection('drones')"> Drones</button></p>
-                                                      <p style="vertical-align: center;">  <button class="btn" onclick="filterSelection('members')">Members</button></p>
-                                                <p style="vertical-align: center;"> <button class="btn" onclick="filterSelection('inauguration')">Inauguration</button></p>
+							<button class="btn" onclick="filterSelection('all')"><div class="txtalg">Show all</div></button>
+							<button class="btn" onclick="filterSelection('drones')"> <div class="txtalg">Drones</div></button>
+                                                       <button class="btn" onclick="filterSelection('members')"><div class="txtalg">Members</div></button>
+                                                <button class="btn" onclick="filterSelection('inauguration')"><div class="txtalg">Inauguration</div></button>
 </div>
 
 						<!-- Posts -->
@@ -275,6 +275,9 @@
     x.parentNode.insertBefore(s, x);
 </script>
 			<style>
+				div.txtalg{
+					vertical-align: middle
+				}
 			.rotate {
   animation: rotation 8s infinite ease;
 }
