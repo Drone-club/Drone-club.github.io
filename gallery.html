@@ -46,10 +46,10 @@
 								</header>
 							</article>
 						<div id="myBtnContainer">
-  <button class="btn" onclick="filterSelection('all')" style="text-align: center;"> Show all</button>
-  <button class="btn" onclick="filterSelection('drones')" style="text-align: center;"> Drones</button>
-  <button class="btn" onclick="filterSelection('members')" style="text-align: center;">Members</button>
-  <button class="btn" onclick="filterSelection('inauguration')" style="text-align: center;"> Inauguration</button>
+  <button class="btn" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('drones')"> Drones</button>
+  <button class="btn" onclick="filterSelection('members')">Members</button>
+  <button class="btn" onclick="filterSelection('inauguration')> Inauguration</button>
 </div>
 
 						<!-- Posts -->
@@ -291,7 +291,10 @@
 		
 		
 
-		<style>
+<style>
+				  div.myBtnContainer {
+  text-align: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -357,14 +360,6 @@ h1 {
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
 </style>
 				<script>
 filterSelection("all")
