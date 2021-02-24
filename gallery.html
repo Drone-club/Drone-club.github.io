@@ -45,9 +45,16 @@
 									<p>This is the exclusive gallery of Drone club of SASTRA</p>
 								</header>
 							</article>
+						<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('drones')"> Drones</button>
+  <button class="btn" onclick="filterSelection('members')">Members</button>
+  <button class="btn" onclick="filterSelection('inauguration')"> Inauguration</button>
+</div>
 
 						<!-- Posts -->
 							<section class="posts">
+								<div class="inauguration">
 								<article>
 									<header>
 										<span class="date">OCTOBER 18, 2019</span>
@@ -56,6 +63,8 @@
 									<a><video controls autoplay src="images/video1.mp4" width=360 height=260 controls></video></a>
 									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
 								</article>
+								</div>
+								<div class="inauguration">
 								<article>
 									<header>
 										<span class="date">OCTOBER 18, 2019</span>
@@ -64,7 +73,90 @@
 									<img src="images/ina.jpeg" width="220" height="400">
 									<p>This were it all began, people who were unknown are our family now. Like minded people joined and doing awfull things right now.</p>
 								</article>
+									</div>
 							</section>
+						
+						
+	
+						
+		<section class="posts">
+			                                         <div class="drones">
+								<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g1.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			<div class="drones">
+								<article>
+									<header>
+										
+										<h2><a>Omnis accipiunt</a></h2>
+									</header>
+									<img src="images/g2.jpeg" width="100%" height="100%">
+									<p>This were it all began, people who were unknown are our family now. Like minded people joined and doing awfull things right now.</p>
+								</article>
+			</div>
+			<div class="drones">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g3.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			<div class="drones">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g4.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			<div class="drones">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g5.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			<div class="drones">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g6.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			<div class="drones">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g7.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			</section>
+						
+						
+						
+						
+						
+						
 					</div>
 
 				<footer id="footer">
@@ -178,6 +270,53 @@
 }
 			
 		</style>
+		
+		
+		<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 	</body>
 </html>
