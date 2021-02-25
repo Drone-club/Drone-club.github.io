@@ -62,7 +62,7 @@
 										<span class="date">OCTOBER 18, 2019</span>
 										<h2><a>The KICKSTART</a></h2>
 									</header>
-									<a><video controls src="images/video1.mp4" width=360 height=260 controls></video></a>
+									<a><video controls autoplay src="images/video1.mp4" width=360 height=260 controls></video></a>
 									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
 								</article>
 								</div>
@@ -74,7 +74,7 @@
 										<span class="date">OCTOBER 18, 2019</span>
 										<h2><a>Omnis accipiunt</a></h2>
 									</header>
-									<img src="images/ina.jpeg" width="65%" height="65%">
+									<img src="images/ina.jpeg" width="250" height="400">
 									<p>This were it all began, people who were unknown are our family now. Like minded people joined and doing awfull things right now.</p>
 								</article>
 									</div>
@@ -90,10 +90,10 @@
 								<article>
 									<header>
 										
-										<h2><a>Martian V</a></h2>
+										<h2><a>The KICKSTART</a></h2>
 									</header>
-									<img src="images/g1.jpeg" width="100%" height="100%">
-									<p>A Perfect Economic 4S Race build which can cruise at a max speed of 120kmph.</p>
+									<img src="images/g1.jpeg" width="100%" height="400">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
 								</article>
 			</div>
 			</div>
@@ -102,16 +102,38 @@
 								<article>
 									<header>
 										
-										<h2><a>From Scratch</a></h2>
+										<h2><a>Omnis accipiunt</a></h2>
 									</header>
-									<img src="images/g2.jpeg" width="40%" height="40%">
-									<img src="images/g3.jpeg" width="40%" height="40%">
-									<img src="images/g4.jpeg" width="50%" height="50%>
-									<p>All the parts are bought seperately and programmed from the scratch.</p>
+									<img src="images/g2.jpeg" width="100%" height="400">
+									<p>This were it all began, people who were unknown are our family now. Like minded people joined and doing awfull things right now.</p>
 								</article>
 			</div>
 			</div>
-						<div class="column drones">
+			<div class="column drones">
+				<div class="content">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g3.jpeg" width="100%" height="400">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			</div>
+			<div class="column drones">
+				<div class="content">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g4.jpeg" width="100%" height="400">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			</div>
+			<div class="column drones">
 				<div class="content">
 			<article>
 									<header>
@@ -340,8 +362,8 @@ h1 {
 }
 
 </style>
-<script>
-filterSelection("inauguration")
+				<script>
+filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
@@ -373,17 +395,6 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
 </script>
 
 	</body>
