@@ -1,113 +1,400 @@
 <!DOCTYPE HTML>
-<!--
-	Lens by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Gallery - Drone Club @ SASTRA TBI</title>
+		<title>GALLERY - DRONE CLUB @ SASTRA TBI</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel = "icon" href =  "images/logo.jpeg" type = "image/x-icon">
 	</head>
-	<body class="is-preload-0 is-preload-1 is-preload-2">
+	<body class="is-preload">
 
-		<!-- Main -->
-			<div id="main">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" style='align:center'>
-						<h1>Gallery</h1>
-						<p>This is the exclusive gallery of Drone club of SASTRA</p>
+					<header id="header">
+						<div class="rotate"><a href="index.html" class="logo">D C S</a></div></header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="logo"><img src="images/logo.jpeg" alt=""width=85 height=64/></li>
+							<li><a href="index.html">HOME</a></li>
+							
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="https://medium.com/@dcsastra2020" rel="noopener noreferrer" target="_blank">BLOGS</a></li>
+							<li class="active"><a href="gallery.html">GALLERY</a></li>
+							<li><a href="joinus.html">JOIN US</a></li>
+						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="#" class="fa fa-home"><span class="label">Home</span></a></li>
+							<li><a href="https://twitter.com/DroneClub3" class="icon brands fa-twitter" rel="noopener noreferrer" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/Drone-Club-of-Sastra-103912848111380" class="icon brands fa-facebook-f"rel="noopener noreferrer" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/drone_club_sastra_tbi/" class="icon brands fa-instagram"rel="noopener noreferrer" target="_blank"><span class="label">Instagram</span></a></li>
 						</ul>
-						<button type='button' style='font-size:150%'><a href="drones.html" >DRONES</a></button><br>
-						<button type='button'style='font-size:150%'><a href="members.html" >MEMBERS</a></button><br>
-						<button type='button' button=active style='font-size:150%'><a href="index.html" >INAUGURATION</a></button><br>
-						
-					</header>
+					</nav>
+				<!-- Main -->
+					<div id="main">
 
-				<!-- Thumbnail -->
-					<section id="thumbnails">
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">GALLERY</a></h2>
+									<p>This is the exclusive gallery of Drone club of SASTRA</p>
+								</header>
+							</article>
+						<div id="myBtnContainer">
+							
+							 <button class="btn active" onclick="filterSelection('inauguration')"><div class="txtalg">Inauguration</div></button>
+							<button class="btn" onclick="filterSelection('drones')"> <div class="txtalg">Drones</div></button>
+                                                       <button class="btn" onclick="filterSelection('members')"><div class="txtalg">Members</div></button>
+                                               
+</div>
+						<!-- Posts -->
+							<section class="posts">
+								<div class="column inauguration">
+									<div class="content">
+								<article>
+									<header>
+										<span class="date">OCTOBER 18, 2019</span>
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<a><video controls autoplay src="images/video1.mp4" width=360 height=260 controls></video></a>
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article> 
+								</div>
+								</div>
+								<div class="column inauguration">
+									<div class="content">
+								<article>
+									<header>
+										<span class="date">OCTOBER 18, 2019</span>
+										<h2><a>Omnis accipiunt</a></h2>
+									</header>
+									<img src="images/ina.jpeg" width="250" height="400">
+									<p>This were it all began, people who were unknown are our family now. Like minded people joined and doing awfull things right now.</p>
+								</article>
+									</div>
+									</div>
+							</section>
 						
-						<article>
-							<a class="thumbnail" href="images/ina.jpeg"><img src="images/ina.jpeg" alt="" /></a>
-							<h2>Vivamus convallis libero</h2>
-							<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/video1.png" data-position="top center"><video src="images/video.mp4" alt="" /></a>
-							<h2>Nec accumsan enim felis</h2>
-							<p>Maecenas eleifend tellus ut turpis eleifend, vitae pretium faucibus.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Donec maximus nisi eget</h2>
-							<p>Tristique in nulla vel congue. Sed sociis natoque parturient nascetur.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Nullam vitae nunc vulputate</h2>
-							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Phasellus magna faucibus</h2>
-							<p>Nulla dignissim libero maximus tellus varius dictum ut posuere magna.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Proin quis mauris</h2>
-							<p>Etiam ultricies, lorem quis efficitur porttitor, facilisis ante orci urna.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/08.jpg"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Gravida quis varius enim</h2>
-							<p>Nunc egestas congue lorem. Nullam dictum placerat ex sapien tortor mattis.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Morbi eget vitae adipiscing</h2>
-							<p>In quis vulputate dui. Maecenas metus elit, dictum praesent lacinia lacus.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Habitant tristique senectus</h2>
-							<p>Vestibulum ante ipsum primis in faucibus orci luctus ac tincidunt dolor.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/11.jpg"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Pharetra ex non faucibus</h2>
-							<p>Ut sed magna euismod leo laoreet congue. Fusce congue enim ultricies.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/12.jpg"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Mattis lorem sodales</h2>
-							<p>Feugiat auctor leo massa, nec vestibulum nisl erat faucibus, rutrum nulla.</p>
-						</article>
-					</section>
+						
+	
+						
+		<div class="posts">
+			                                         <div class="column drones">
+									 <div class="content">
+								<article>
+									<header>
+										
+										<h2><a class="txtt">Martian V</a></h2>
+									</header>
+									<img src="images/g1.jpeg" width="100%" height="400" class="center">
+									<p class="txtt">A Perfect Economic 4S Race build which can cruise at a max speed of 120kmph.</p>
+								</article>
+			</div>
+			</div>
+						</div>
+						<div class="posts">
+			<div class="column drones">
+				<div class="content">
+								<article>
+									<header>
+										
+										<h2><a class="txtt">From Scratch</a></h2>
+									</header>
+									<img src="images/g2.jpeg" width="100%" height="400"><img src="images/g3.jpeg" width="100%" height="400"><img src="images/g4.jpeg" width="100%" height="400">
+									
+									
+									<p class="txtt">All the parts are bought seperately and programmed from the scratch.</p>
+								</article>
+			</div>
+			</div>
+						</div>
+					<section class="posts">
+			
+			<div class="column drones">
+				<div class="content">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g5.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			</div>
+			<div class="column drones">
+				<div class="content">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g6.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			</div>
+			<div class="column drones">
+				<div class="content">
+			<article>
+									<header>
+										
+										<h2><a>The KICKSTART</a></h2>
+									</header>
+									<img src="images/g7.jpeg" width="100%" height="100%">
+									<p>It's not about what we're looking at but how we're looking at it and this looks just fantastic.</p>
+								</article>
+			</div>
+			</div>
+			</section>
+						
+						
+						
+						
+						
+						
+					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
-						</ul>
+				<footer id="footer">
+						<section>
+							<form method="post" action="https://formspree.io/mgenjqjd">
+								<pl style="text-align: centre";>CONTACT US</p1>
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="_replyto" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>SASTRA DEEMED TO BE UNIVERSITY<br />
+								THIRUMALAISAMUDIRAM, TRICHY - TANJORE HIGHWAY,<br />
+								TANJORE.</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">dcsastra2020@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/DroneClub3" class="icon brands fa-twitter" rel="noopener noreferrer" target="_blank"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/Drone-Club-of-Sastra-103912848111380" class="icon brands fa-facebook-f"rel="noopener noreferrer" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/drone_club_sastra_tbi/" class="icon brands fa-instagram"rel="noopener noreferrer" target="_blank"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
 					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy;DRONE CLUB @ SASTRA TBI</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?66287';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Drone Club",
+      "brandSubTitle":"Typically replies within 4 hours",
+      "brandImg":"https://drone-club.github.io/images/logo.jpeg",
+      "welcomeText":"Hi, there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"919003897534"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+			<style>
+				div.txtalg{
+					vertical-align: middle
+				}
+			.rotate {
+  animation: rotation 8s infinite ease;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+			
+		</style>
+		
+		
+
+		<style>
+* {
+  box-sizing: border-box;
+}
+			.txtt{
+				 text-align: center;
+			}
+.center {
+  display: block;
+    margin: 0 auto;
+}
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+</style>
+<script>
+filterSelection("inauguration")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 	</body>
 </html>
