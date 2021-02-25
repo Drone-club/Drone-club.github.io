@@ -195,7 +195,20 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
 </script>
 		
 	
-	
+	<style>
+			.rotate {
+  animation: rotation 8s infinite ease;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+				</style>
 
 
 	</body> 
