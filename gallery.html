@@ -55,51 +55,7 @@
 						
 						<!-- Posts -->
 						
-									<!-- Filters -->
-										<header>
-											<ul class="tabs">
-					<li><button data-tag="inuaguration" class="btn active" onclick="filterSelection('inuaguration')">Inuaguration</button></li>
-							<li><button data-tag="drone" class="btn" onclick="filterSelection('drone')">Drones</button></li>
-								<li><button  class="btn" data-tag="members" onclick="filterSelection('members')">Members</button></li>
-											</ul>
-										</header>
-
-										<div class="content">
-											<div class="media inuaguration">
-												<video controls width=310 height=330>
-													<source src="images/video1.mp4" type="video/mp4">
-												</video>
-											</div>
-											<div class="media inuaguration">
-												<a href="gallery/images/fulls/ina.jpeg"><img src="gallery/images/thumbs/ina.jpeg" title=" "/></a>
-											</div>
-											<div class="media drone">
-												<a href="gallery/images/fulls/g1.jpeg"><img src="gallery/images/thumbs/g1.jpeg" title="Martian V "/></a>
-											</div>
-											<div class="media drone">
-												<a href="gallery/images/fulls/g2.jpeg"><img src="gallery/images/thumbs/g2.jpeg" title=" "/></a>
-											</div>
-											<div class="media drone">
-												<a href="gallery/images/fulls/g3.jpeg"><img src="gallery/images/thumbs/g3.jpeg" title=" "/></a>
-											</div>
-											<div class="media drone">
-												<a href="gallery/images/fulls/g4.jpeg"><img src="gallery/images/thumbs/g4.jpeg" title=" "/></a>
-											</div>
-											
-											<div class="media drone">
-												<a href="gallery/images/fulls/g6.jpeg"><img src="gallery/images/thumbs/g6.jpeg" title=" "/></a>
-											</div>
-											<div class="media drone">
-												<a href="gallery/images/fulls/g7.jpeg"><img src="gallery/images/thumbs/g7.jpeg" title=" "/></a>
-											</div>
-					
-											<div class="media drone">
-												<a href="gallery/images/fulls/g5.jpeg"><img src="gallery/images/thumbs/g5.jpeg" title=" "/></a>
-											</div>
-										</div>
-								</div>
-						</section>
-
+						<div class="gfg" onmouseover="myFunction()"><div/>
 
 						
 
@@ -257,69 +213,18 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
 		</style>
 		
 		
-<script>
-filterSelection("inuaguration")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("media");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
+ <style> 
+            .gfg { 
+                text-align:center; 
+                font-size:40px;  
+            } 
+        </style> 
+        <script> 
+            function myFunction() { 
+                window.open("gallery/gallery"); 
+            } 
+        </script> 
 						
-						<style>
-							.btn {
-                                         background-color: black
-                                                       border: none;
-								border-color: black;
-                                                        color: black;
-                                                 padding: 15px 32px;
-                                                text-align: center;
-                                                  text-decoration: none;
-                                                 display: inline-block;
-                                                font-size: 16px;
-                                                 }
-							.btn active {
-                                                background-color: #ddd;
-                                                                }
-                                                     </style>
-                                               </style>
 							
 						
 	</body>
