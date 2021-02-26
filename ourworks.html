@@ -53,12 +53,28 @@
 						<!-- Posts -->
 						
 						
-<img src="images/g1.jpeg" class="img-rounded" alt="Cinque Terre" height="400" width="350" title="Martian V ">
-<img src="images/g2.jpeg" class="img-rounded" alt="Cinque Terre" height="400" width="350">
-<img src="images/g5.jpeg" class="img-rounded" alt="Cinque Terre" height="400" width="350">
-<img src="images/g6.jpeg" class="img-rounded" alt="Cinque Terre" height="400" width="350">
-<img src="images/g7.jpeg" class="img-rounded" alt="Cinque Terre" height="400" width="350">
-<img src="images/g7.jpeg" class="img-rounded" alt="Cinque Terre" height="400" width="350">
+<div class="row">
+  <div class="column">
+    <img src="images/g1.jpeg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/g2.jpeg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/g5.jpeg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+						<div class="row">
+  <div class="column">
+    <img src="images/g6.jpeg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/g7.jpeg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/g7.jpeg" alt="Mountains" style="width:100%">
+  </div>
+</div>
 				
 							
 					</div>
@@ -183,6 +199,25 @@
 			$("#includedcontent").load("gallery/gallery.html);
 						   });
 		</script>
+		
+		<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 
 
 	</body>
