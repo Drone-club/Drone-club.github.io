@@ -55,7 +55,7 @@
 						
 						<!-- Posts -->
 						
-						<div id="includedContent"></div>
+						<link rel="dns-prefetch" href="gallery/gallery.html">
 
 						
 
@@ -210,12 +210,13 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
   }
 }
 							</style>
- <script> 
-            $(function(){ 
-                $("#includedContent").load("gallery/gallery.html"); 
-            }); 
-        </script>
-						
+<script>
+    var loaderAnimation = $("#html5Loader").LoaderAnimation();
+    $.html5Loader({getFilesToLoadJSON:'json file',
+        onUpdate: loaderAnimation.update,
+        debugMode:false
+    });
+</script>				
 							
 						
 	</body>
